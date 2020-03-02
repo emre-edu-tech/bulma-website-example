@@ -1,0 +1,39 @@
+// import bulma and bulma related files
+@import '../../node_modules/bulma/sass/utilities/initial-variables';
+@import '../../node_modules/bulma/sass/utilities/functions';
+// Update bulma variables
+$blue: #08A4BD;
+$blue-invert: #FFC07F;
+$family-sans-serif: Arial;
+// $primary: $blue;
+$pink: #F15156;
+
+@import '../../node_modules/bulma/bulma';
+
+// Font Awesome
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+
+// Custom CSS
+.blue-paragraph {
+	background: $blue;
+	color: #FFF;
+}
+
+.invert-paragraph {
+	background: $blue-invert;
+}
+
+.last-column-paragraph {
+	background: $pink;
+}
+
+// Bulma overrides
+.navbar-item img {
+	max-height: 4rem;
+}
+
+// Media Queries
+@media screen and (max-width: 767px) {}
