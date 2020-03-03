@@ -16,7 +16,7 @@ $pink: #F15156;
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
 
-// Custom CSS
+// Custom CSS for warming.html page
 .blue-paragraph {
 	background: $blue;
 	color: #FFF;
@@ -31,8 +31,26 @@ $pink: #F15156;
 }
 
 // Bulma overrides
-.navbar-item img {
-	max-height: 4rem;
+// Real deal has just started here
+body {
+	background-image: url('../images/blue-snow.png');
+	background-repeat: repeat;
+}
+
+.navbar-brand {
+	.navbar-item img {
+		max-height: 4rem;
+	}
+}
+
+.navbar-menu {
+	.navbar-end {
+		.navbar-item {
+			.icon {
+				margin-right: 5px;
+			}
+		}
+	}
 }
 
 // Media Queries

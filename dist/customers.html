@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bulma Example | Customers</title>
+	<link rel="stylesheet" href="css/styles.css?cb=1583166484072">
+</head>
+<body>
+	
+	<nav class="navbar has-shadow">
+		<div class="navbar-brand">
+			<!-- logo -->
+			<a href="#" class="navbar-item">
+				<img src="images/logo.png" alt="Logo">
+			</a>
+			<!-- mobile burger icon -->
+			<div class="navbar-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="navbar-menu">
+			<!-- company tagline -->
+			<div class="navbar-start">
+				<div class="navbar-item">
+					<small>Your digital bridge</small>
+				</div>
+			</div>
+			<!-- username, dropdown menu -->
+			<div class="navbar-end">
+				<a class="navbar-item">
+					<div>
+						<span class="icon is-small">
+							<i class="fas fa-award fa-fw"></i>
+						</span>
+						Über uns
+					</div>
+				</a>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<div class="navbar-link">
+						Oliver Schmitz
+					</div>
+					<div class="navbar-dropdown">
+
+						<a class="navbar-item">
+							<div>
+								<span class="icon is-small">
+									<i class="fas fa-user-circle fa-fw"></i>
+								</span>
+								Profile
+							</div>
+						</a>
+
+						<a class="navbar-item">
+							<div>
+								<span class="icon is-small">
+									<i class="fas fa-bug fa-fw"></i>
+								</span>
+								Bug Report
+							</div>
+						</a>
+
+						<a class="navbar-item">
+							<div>
+								<span class="icon is-small">
+									<i class="fa fa-sign-out-alt fa-fw"></i>
+								</span>
+								Sign out
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<section class="section">
+		<div class="columns">
+			<div class="column is-4-tablet is-3-desktop is-2-widescreen">
+				<nav class="menu">
+					<p class="menu-label">Menu</p>
+					<ul class="menu-list">
+						<li>
+							<a href="dashboard.html">
+								<span class="icon"><i class="fas fa-tachometer-alt fa-fw"></i></span>
+								Dashboard
+							</a>
+						</li>
+
+						<li>
+							<a href="books.html">
+								<span class="icon"><i class="fas fa-book fa-fw"></i></span>
+								Books
+							</a>
+						</li>
+
+						<li>
+							<a class="is-active" href="customers.html">
+								<span class="icon"><i class="fas fa-address-book fa-fw"></i></span>
+								Customers
+							</a>
+						</li>
+
+						<li>
+							<a href="orders.html">
+								<span class="icon"><i class="fas fa-file-alt fa-fw"></i></span>
+								Orders
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="column">
+				<h1 class="title">Customers</h1>
+
+				<nav class="level">
+					<!-- left side level -->
+					<div class="level-left">
+						<div class="level-item">
+							<p class="subtitle is-5"><strong>3</strong> Customers</p>
+						</div>
+
+						<div class="level-item">
+							<a href="new-customer.html" class="button is-success">New</a>	
+						</div>
+
+						<div class="level-item is-hidden-tablet-only">
+							<div class="field has-addons">
+								<div class="control">
+									<input type="text" name="search" id="search" placeholder="Name, email..." class="input">
+								</div>
+								<div class="control">
+									<button class="button">Search</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- right side level -->
+					<div class="level-right">
+						<p class="level-item"><strong>All</strong></p>
+						<p class="level-item"><a href="#">With orders</a></p>
+						<p class="class-item"><a href="#">Without orders</a></p>
+					</div>
+				</nav>
+
+				<!-- pagination top -->
+				<nav class="pagination">
+					<a class="pagination-previous">Previous</a>
+					<a class="pagination-next">Next</a>
+					<ul class="pagination-list">
+						<li>
+							<a href="#"class="pagination-link">1</a>
+						</li>
+						<li>
+							<span class="pagination-ellipsis">&hellip;</span>
+						</li>
+						<li>
+							<a href="#" class="pagination-link">20</a>
+						</li>
+						<li>
+					      <a href="#" class="pagination-link is-current">21</a>
+					    </li>
+					    <li>
+					      <a href="#" class="pagination-link">22</a>
+					    </li>
+					    <li>
+					      <span class="pagination-ellipsis">&hellip;</span>
+					    </li>
+					    <li>
+					      <a href="#" class="pagination-link">45</a>
+					    </li>
+					</ul>
+				</nav>
+
+				<!-- customer list -->
+				<table class="table is-hoverable is-fullwidth">
+					
+				</table>
+
+				<!-- pagination bottom -->
+				<nav class="pagination">
+					<a class="pagination-previous">Previous</a>
+					<a class="pagination-next">Next</a>
+					<ul class="pagination-list">
+						<li>
+							<a href="#"class="pagination-link">1</a>
+						</li>
+						<li>
+							<span class="pagination-ellipsis">&hellip;</span>
+						</li>
+						<li>
+							<a href="#" class="pagination-link">20</a>
+						</li>
+						<li>
+					      <a href="#" class="pagination-link is-current">21</a>
+					    </li>
+					    <li>
+					      <a href="#" class="pagination-link">22</a>
+					    </li>
+					    <li>
+					      <span class="pagination-ellipsis">&hellip;</span>
+					    </li>
+					    <li>
+					      <a href="#" class="pagination-link">45</a>
+					    </li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/app.js?cb=1583166484072"></script>
+</body>
+</html>
